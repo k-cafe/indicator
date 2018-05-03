@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.kohi.tabindicator.MainActivity">
+    tools:context="com.example.kohi.tabindicator.main.MainActivity">
 
 
     <RelativeLayout
@@ -12,7 +12,7 @@
         android:layout_height="wrap_content">
 
         <android.support.v4.view.ViewPager
-            android:id="@+id/pager"
+            android:id="@+id/pagerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
@@ -20,7 +20,7 @@
             android:id="@+id/indicatorLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/pager"
+            android:layout_alignBottom="@+id/pagerView"
             app:tabBackground="@drawable/selector_indicator"
             app:tabMinWidth="@dimen/small_margin"
             app:tabGravity="center"
