@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="true">
+        <bitmap android:gravity="center" android:src="@drawable/ic_radio_button_checked_white_24dp" />
+    </item>
+
+    <item>
+        <bitmap android:gravity="center" android:src="@drawable/ic_radio_button_unchecked_white_24dp" />
+    </item>
+
+</selector>
