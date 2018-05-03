@@ -5,4 +5,4 @@ import android.arch.lifecycle.Transformations
 import com.example.kohi.tabindicator.Mapper
 
 
-fun <T, U> LiveData<T>.map(mapper: Mapper<T, U>): LiveData<U> = Transformations.map(this, mapper)
+fun <T, U> LiveData<T>.map(map:(T) -> U): LiveData<U> = Transformations.map(this, map)
