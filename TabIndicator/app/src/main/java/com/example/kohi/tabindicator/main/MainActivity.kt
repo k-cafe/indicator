@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         colorViewModel = ColorViewModel()
 
-        pagerView.adapter = CalendarPagerAdapter(supportFragmentManager)
+        pagerView.adapter = ColorPagerAdapter(supportFragmentManager)
         pagerView.offscreenPageLimit = 2 
         pagerView.addOnPageChangeListener(pageChangeListener)
         indicatorLayout.setupWithViewPager(pagerView, true)
@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
     //
     // inner class
     //
-    private inner class CalendarPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
+    private inner class ColorPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
         override fun getItem(position: Int) = ColorFragment.putExtra(position).setModel(colorViewModel)
 
