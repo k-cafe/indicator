@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/pagerView"
-            app:tabBackground="@drawable/selector_indicator"
+            app:tabBackground="@null"
             app:tabMinWidth="@dimen/small_margin"
             app:tabGravity="center"
             app:tabIndicatorHeight="0dp" />
